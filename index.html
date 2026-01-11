@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI CAD for Real Estate | Automated 2D + 3D + Cost Estimation</title>
+  <meta name="description" content="Generate 2D plans, 3D models, and construction material + cost predictions from simple inputs. Join early access." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">RealEstateAI CAD</div>
+      <a class="btn btn-ghost" href="#lead">Request Demo</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <h1>Fully Automated AI System for 2D Design, 3D Modeling, and Construction Cost Prediction</h1>
+          <p class="sub">
+            Enter plot size, floors, and requirements. The system generates complete drawings and estimates materials, manpower, and budget scenarios.
+            Zero manual drafting.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#lead">Join Early Access</a>
+            <a class="btn btn-ghost" href="#how">See How It Works</a>
+          </div>
+
+          <div class="badges">
+            <span class="badge">2D Auto-Plan</span>
+            <span class="badge">Auto 3D Model</span>
+            <span class="badge">Materials + Cost</span>
+            <span class="badge">Multi-Scenario Pricing</span>
+          </div>
+        </div>
+
+        <div class="card hero-card">
+          <h3>What you get</h3>
+          <ul class="checklist">
+            <li>AI-generated 2D plans (rooms, dimensions, layers)</li>
+            <li>Auto 3D model from 2D plan</li>
+            <li>Material quantity estimation (bricks, cement, steel, etc.)</li>
+            <li>Labour estimation</li>
+            <li>Cost prediction (budget / standard / premium)</li>
+          </ul>
+          <div class="note">Currently building MVP. Join the waitlist for demo access.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section">
+      <div class="container">
+        <h2>Why this exists</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Manual drafting is slow</h3>
+            <p>Hours or days spent on repetitive drafting and revisions.</p>
+          </div>
+          <div class="card">
+            <h3>Design-to-cost gap</h3>
+            <p>2D, 3D, and estimation are handled in separate tools and teams.</p>
+          </div>
+          <div class="card">
+            <h3>Errors are expensive</h3>
+            <p>Layer misuse, missing dimensions, and coordination issues cause rework.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section alt">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><b>Input</b> plot size, floors, room preferences, and utilities</li>
+          <li><b>Generate</b> full 2D plan with standards and dimensions</li>
+          <li><b>Build</b> automatic 3D model from the 2D plan</li>
+          <li><b>Predict</b> materials, labour, and cost (3 pricing scenarios)</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="section">
+      <div class="container">
+        <h2>Who it’s for</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Real estate developers</h3>
+            <p>Faster feasibility and budget estimation before committing.</p>
+          </div>
+          <div class="card">
+            <h3>Architects & studios</h3>
+            <p>Automate repetitive drafting and accelerate concept-to-plan.</p>
+          </div>
+          <div class="card">
+            <h3>Builders & contractors</h3>
+            <p>Better quantity takeoff and planning with fewer surprises.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAD FORM -->
+    <section id="lead" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Request demo / Early access</h2>
+          <p>Leave your details. You’ll get updates + access when the MVP demo is ready.</p>
+
+          <div class="mini-faq">
+            <div><b>Timeline:</b> MVP in progress</div>
+            <div><b>Output:</b> 2D + 3D + estimation report</div>
+            <div><b>Pricing:</b> early adopter discounts later</div>
+          </div>
+        </div>
+
+        <form class="card form" id="leadForm">
+          <label>
+            Name
+            <input required name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input required type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Phone (optional)
+            <input name="phone" placeholder="+91..." />
+          </label>
+          <label>
+            Role
+            <select name="role" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Developer</option>
+              <option>Architect</option>
+              <option>Builder/Contractor</option>
+              <option>Student</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            What do you want to build?
+            <input name="project" placeholder="Bungalow / house / apartment..." />
+          </label>
+
+          <button class="btn" type="submit">Join Waitlist</button>
+          <p class="fine">We will only use this to contact you about the demo.</p>
+
+          <div id="status" class="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> RealEstateAI CAD</div>
+        <div class="links">
+          <a href="#how">How it works</a>
+          <a href="#lead">Request demo</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
