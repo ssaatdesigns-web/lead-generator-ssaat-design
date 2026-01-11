@@ -26,7 +26,7 @@ Project: ${payload.project || "-"}`
   );
 
   // Replace with your email
-  const to = "youremail@example.com";
+  const to = "ssaatdesigns@gmail.com";
 
   statusEl.textContent = "Opening your email app to send the request...";
   window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
